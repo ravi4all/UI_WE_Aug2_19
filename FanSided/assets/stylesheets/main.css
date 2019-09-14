@@ -1,0 +1,198 @@
+/* Global Settings */
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* Generic CSS */
+
+#header {
+    background-color: #062F4D;
+}
+
+#header a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#header .logo {
+    width: 10%;
+    padding-top: 20px;
+}
+
+#header .links {
+    width: 10%;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+#header .links span {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#main-navigation {
+    width: 76%;
+    margin-left: 30px;
+}
+
+#main-navigation>ul>li {
+    display: inline-block;
+}
+
+#main-navigation ul li a {
+    font-family: 'Titillium Web', sans-serif;
+    display: block;
+    padding: 18px 10px;
+    position: relative;
+}
+
+#main-navigation>ul>li>a:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    border: 8px solid #fff;
+    border-color: transparent transparent #fff;
+    left: 40%;
+    display: none;
+}
+
+#main-navigation ul li a:hover {
+    background-color: #042135;
+}
+
+#main-navigation ul li:hover a:after {
+    display: block;
+}
+
+#main-navigation .dropdown {
+    position: absolute;
+    width: 900px;
+    left: 15%;
+    display: none;
+}
+
+#main-navigation .col-1 {
+    width: 68%;
+    padding: 20px;
+}
+
+#main-navigation .col-2 {
+    width: 20%;
+    background-color: #F3F3F3;
+    padding: 20px;
+}
+
+#main-navigation .dropdown a {
+    color: #073759;
+    padding: 0px;
+    text-transform: none;
+}
+
+#main-navigation ul li .dropdown a:hover {
+    background-color: transparent;
+}
+
+#main-navigation .dropdown .image {
+    position: relative;
+}
+
+#main-navigation .dropdown .text {
+    position: absolute;
+    bottom: 0px;
+    width: 70%;
+    left: 10px;
+}
+
+#main-navigation .dropdown .text a {
+    color: #fff;
+}
+
+#main-navigation .dropdown .col-1 ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+#main-navigation .dropdown .sub-col-1,
+#main-navigation .dropdown .sub-col-2 {
+    width: 46%;
+}
+
+#main-navigation .dropdown .sub-col-1 {
+    margin-right: 25px;
+}
+
+#main-navigation .dropdown li {
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding-left: 15px;
+}
+
+#main-navigation .dropdown .col-2 li {
+    margin-bottom: 8px;
+}
+
+#main-navigation ul li:hover .dropdown {
+    display: block;
+}
+
+#main {}
+
+#sidebar {}
+
+#footer {}
+
+
+/* Specific CSS */
