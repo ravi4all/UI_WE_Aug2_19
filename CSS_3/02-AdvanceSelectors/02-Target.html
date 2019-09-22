@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #login {
+            display: none;
+            /* background-color: yellow; */
+        }
+        
+        #login:target {
+            display: block;
+            /* background-color: red; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Target Selector</h1>
+
+    <a href="#login">Login Now</a>
+
+    <div id="login">
+        <a href="#">Close</a>
+        <h2>Login Form</h2>
+        <form action="#">
+            <input type="text" placeholder="Enter Name">
+            <input type="password" placeholder="Enter Psasword">
+            <input type="submit">
+        </form>
+    </div>
+
+</body>
+
+</html>

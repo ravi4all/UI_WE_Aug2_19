@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        
+        nav {
+            text-align: center;
+            background-color: lightslategray;
+            position: fixed;
+            width: 100%;
+            padding: 15px 0px;
+            top: 0px;
+        }
+        
+        nav a {
+            display: inline-block;
+            margin: 0px 10px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+        }
+        
+        #home,
+        #shoes,
+        #clothes {
+            margin-top: 0px;
+            padding-top: 60px;
+        }
+        
+        #clothes,
+        #shoes {
+            display: none;
+        }
+        
+        #shoes:target {
+            display: block;
+        }
+        
+        #clothes:target {
+            display: block;
+        }
+        
+        #shoes:target~#home {
+            display: none;
+        }
+        
+        #clothes:target~#home {
+            display: none;
+        }
+        
+        img {
+            width: 100%;
+            height: inherit;
+            max-height: inherit;
+        }
+        
+        ul li {
+            display: inline-block;
+            width: 24%;
+            max-height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shoes">Shoes</a>
+        <a href="#clothes">Clothes</a>
+        <a href="#watch">Watch</a>
+        <a href="#sports">Sports</a>
+        <a href="#">More</a>
+    </nav>
+
+    <div id="shoes">
+        <h2>Shoes</h2>
+        <ul>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/41KPe6z3SEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/41KPe6z3SEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/41KPe6z3SEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/41KPe6z3SEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/41KPe6z3SEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/41KPe6z3SEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/41KPe6z3SEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/41KPe6z3SEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/41KPe6z3SEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/41KPe6z3SEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <div id="clothes">
+        <h2>Clothes</h2>
+        <ul>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/61NLo79vhEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/61NLo79vhEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/61NLo79vhEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/61NLo79vhEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/61NLo79vhEL._AC_UL480_SEARCH213888_FMwebp_QL65_.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <div id="home">
+        <h1>This is online shopping in one page</h1>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HPC/herotator/tall_her0_hh_1500x600._CB469526052_.jpg" alt="">
+    </div>
+
+</body>
+
+</html>
