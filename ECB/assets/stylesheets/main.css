@@ -1,0 +1,243 @@
+/* Global Settings */
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+figure {
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* Generic CSS */
+
+#header {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    /* overflow: scroll; */
+    background-color: #005699;
+}
+
+#header .logo {
+    background-color: #002F52;
+    padding: 15px 40px 13px;
+    position: relative;
+}
+
+#header .bg-logo {
+    height: 81px;
+    width: 34px;
+    display: block;
+    background-position: -602px -199px;
+}
+
+#header .logo:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    left: 0px;
+    top: 0px;
+    background-color: #29a9e4;
+}
+
+#main-navigation {
+    background-color: #005699;
+    padding-top: 18px;
+}
+
+#main-navigation>ul>li>a {
+    color: #fff;
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    display: block;
+    padding: 13px 0px 12px 35px;
+    position: relative;
+}
+
+#main-navigation>ul>li>a:before {
+    content: "";
+    background-image: url("http://pngimg.com/uploads/cricket/cricket_PNG7.png");
+    height: 13px;
+    width: 13px;
+    background-size: 100% 100%;
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 13px;
+}
+
+#main-navigation>ul>li>a:hover {
+    background-color: #002F52;
+    color: #fff;
+    opacity: 1;
+}
+
+.dropdown {
+    position: absolute;
+    top: 0px;
+    background-color: #002F52;
+    width: 1000px;
+    left: 100%;
+    padding: 60px 40px;
+    transition-duration: 1s;
+    transform: translateX(-120%);
+    z-index: -1;
+}
+
+.dropdown h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.dropdown .row {
+    justify-content: space-between;
+}
+
+.dropdown .col {
+    width: 32%;
+}
+
+.card {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card .desc {
+    background-color: #FFFFFF;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.card ul li {
+    padding: 5px 15px;
+}
+
+.card ul li a {
+    color: #000;
+    font-size: 14px;
+}
+
+.card figure {
+    position: relative;
+    height: 130px;
+    overflow: hidden;
+}
+
+.card figure::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(transparent, #002f52 100%);
+}
+
+.card figcaption {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: #fff;
+    height: 100%;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-navigation ul li:hover .dropdown {
+    transform: translateX(0%);
+}
+
+.sociable h4 {
+    margin-bottom: 2px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.sociable ul {
+    display: flex;
+}
+
+.sociable ul li {
+    margin: 0px 6px;
+    color: #fff;
+}
+
+#main {}
+
+#sidebar {}
+
+#footer {}
+
+.sprite {
+    background-image: url("../images/global-sprite.png")
+}
+
+
+/* Specific CSS */
