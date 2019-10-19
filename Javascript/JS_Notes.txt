@@ -1,0 +1,43 @@
+Javascript
+- Client + Server Side dynamic scripting language
+
+HTML => Static
+
+Netscape
+world first browser = Nexus => Static
+
+=> Brendon Eich (Self + Scheme)
+- written JS in 10 days (used syntax of java)
+world first dynamic browser - Mosaic
+
+Mocha - JS First nick name
+Livescript - 
+Javascript
+
+JScript - .net - IE
+
+ECMA - European Computer Manufacturing Association
+ECMAScript (ES)
+
+
+Mosaic - Mozilla
+
+V8 Engine
+Features of JS
+- Interpreted Language
+- Dynamically Typed
+- Loosely Typed Language
+- Functional Programming
+- DOM (Document Object Model) and BOM (Browser Object Model)
+- Multi-Paradigm (Procedural + OOPS + Functional)
+- Event-Driven Language (click,keypress,mousemove...)
+
+
+
+
+
+
+
+
+
+
