@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div_1 {
+            border: 2px solid red;
+        }
+        
+        #div_2 {
+            border: 2px solid black;
+            height: 400px;
+            background-image: url("../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg");
+            background-position: -100px -100px;
+        }
+        
+        #title {
+            font-size: 40px;
+            text-align: center;
+            opacity: 0;
+            transition: 1s;
+            transform: translateX(-100%);
+        }
+        
+        .row {
+            display: flex;
+            overflow: hidden;
+        }
+        
+        .col {
+            transition: 1s;
+        }
+        
+        .col-1 {
+            transform: translateX(-100%);
+            width: 50%;
+        }
+        
+        .col-2 {
+            transform: translateX(100%);
+            width: 50%;
+        }
+        
+        #section_1.animate #title {
+            opacity: 1;
+            transform: translate(0%);
+        }
+        
+        #section_1.animate .col {
+            transform: translateX(0%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mouse Events</h1>
+
+    <div id="div_1" onmouseover="changeImage(this)" onmouseout="changeImage_2()">
+        <img src="../../images/hulk5-18463.gif" alt="" id="img">
+    </div>
+
+    <div id="div_2" onmousemove="animateDiv(this)">
+
+    </div>
+
+    <section id="section_1">
+        <h2 id="title">This is a heading</h2>
+        <div class="row">
+            <div class="col col-1">
+                <img src="../../images/dhoni.jpg" alt="">
+            </div>
+            <div class="col col-2">
+                <img src="../../images/dhoni.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function changeImage(obj) {
+            // obj.innerHTML = '<img src="../../images/hulk-bigpunch.gif" alt="">';
+            document.querySelector("#img").src = "../../images/hulk-bigpunch.gif";
+        }
+
+        function changeImage_2() {
+            document.querySelector("#img").src = "../../images/hulk5-18463.gif";
+        }
+
+        function animateDiv(obj) {
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+            // console.log(mouseX, mouseY);
+            obj.style.backgroundPositionX = mouseX * 0.2 + 'px';
+            obj.style.backgroundPositionY = mouseY * 0.2 + 'px';
+        }
+
+        window.addEventListener("scroll", function() {
+            var scrollY = window.scrollY;
+            // console.log(scrollY);
+            // document.querySelector("#section_1").offsetTop;
+            if (scrollY > 530) {
+                document.querySelector("#section_1").className = "animate";
+            } else {
+                document.querySelector("#section_1").className = "";
+            }
+        })
+    </script>
+</body>
+
+</html>
