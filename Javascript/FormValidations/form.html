@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="validations.js"></script>
+    <style>
+        .progress {
+            display: inline-block;
+            background-color: red;
+            height: 40px;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form action="http://www.brain-mentors.com" id="form">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" id="box_1" placeholder="Enter your name">
+                </td>
+                <td>
+                    <span class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input type="text" id="box_2" placeholder="Enter Email">
+                </td>
+                <td>
+                    <span class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" id="box_3" placeholder="Enter Password">
+                </td>
+                <td>
+                    <span class="error"></span>
+                    <span class="progress"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td>
+                    <input type="password" id="box_4" placeholder="Confirm Password">
+                </td>
+                <td>
+                    <span class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Profile Pic</td>
+                <td>
+                    <input type="file" id="pic">
+                </td>
+                <td>
+                    <span></span>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="reset">Reset</button></td>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+
+    <img src="" id="image" alt="">
+
+</body>
+
+</html>

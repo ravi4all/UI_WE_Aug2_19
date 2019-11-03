@@ -1,0 +1,83 @@
+var obj = {"name":"Ram","sal":45000,"dept":"IT"}
+undefined
+obj
+{name: "Ram", sal: 45000, dept: "IT"}
+typeof(obj)
+"object"
+obj instanceof Object
+true
+a = 12;
+12
+typeof(a)
+"number"
+a1 = new Number(12);
+Number {12}
+typeof(a1)
+"object"
+a == a1
+true
+a === a1
+false
+Object
+ƒ Object() { [native code] }
+Number
+ƒ Number() { [native code] }
+typeof(Number)
+"function"
+Function
+ƒ Function() { [native code] }
+Function instanceof Object
+true
+Object instanceof Function
+true
+Number instanceof Function
+true
+function Emp(){
+	
+}
+undefined
+var emp = new Emp();
+undefined
+emp
+Emp {}
+Emp
+ƒ Emp(){
+	
+}
+emp.id = 101
+101
+emp.name = "Ram"
+"Ram"
+emp
+Emp {id: 101, name: "Ram"}
+obj
+{name: "Ram", sal: 45000, dept: "IT"}
+var obj = {
+	"name":"Ram",
+	"sal":45000,
+	"dept":"IT",
+	"details":function() {
+		console.log(name,sal,dept);
+	}
+}
+undefined
+obj.details()
+VM934:6 Uncaught ReferenceError: sal is not defined
+    at Object.details (<anonymous>:6:20)
+    at <anonymous>:1:5
+details @ VM934:6
+(anonymous) @ VM966:1
+var obj = {
+	"name":"Ram",
+	"sal":45000,
+	"dept":"IT",
+	"details":function() {
+		console.log(this.name,this.sal,this.dept);
+	}
+}
+undefined
+obj.details()
+VM1060:6 Ram 45000 IT
+undefined
+name
+""
