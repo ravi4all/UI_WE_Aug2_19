@@ -1,0 +1,248 @@
+function counter() {
+	var c = 0;
+	return c += 1;
+}
+undefined
+counter()
+1
+counter()
+1
+counter()
+1
+function outer() {
+	var x = 0;
+	function inner() {
+		return x += 1;
+	}
+}
+undefined
+inner()
+VM370:1 Uncaught ReferenceError: inner is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM370:1
+outer()
+undefined
+function outer() {
+	var x = 0;
+	function inner() {
+		return x += 1;
+	}
+	return inner()
+}
+undefined
+outer()
+1
+outer()
+1
+function outer() {
+	var x = 0;
+	function inner() {
+		return x += 1;
+	}
+	return inner
+}
+undefined
+function add() {
+	var y = 10;
+	var z = y / 2;
+	return z;
+}
+undefined
+x1 = add();
+5
+x2 = outer()
+ƒ inner() {
+		return x += 1;
+	}
+x2
+ƒ inner() {
+		return x += 1;
+	}
+x2()
+1
+x2()
+2
+x2()
+3
+function outer() {
+	var x = 0;
+	return function() {
+		return x += 1;
+	}
+}
+undefined
+outer()()
+1
+var counter = outer();
+undefined
+counter()
+1
+counter()
+2
+counter()
+3
+function outer() {
+	let x = 0;
+	return function() {
+		return x += 1;
+	}
+}
+undefined
+var counter = outer();
+undefined
+counter()
+1
+counter()
+2
+counter()
+3
+function outer() {
+	const x = 0;
+	return function() {
+		return x += 1;
+	}
+}
+undefined
+var counter = outer();
+undefined
+counter()
+VM828:4 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:4:12
+    at <anonymous>:1:1
+(anonymous) @ VM828:4
+(anonymous) @ VM871:1
+function(x,y){
+	return x + y;
+}
+VM935:1 Uncaught SyntaxError: Function statements require a function name
+(function(x,y){
+	return x + y;
+})
+ƒ (x,y){
+	return x + y;
+}
+(function(x,y){
+	return x + y;
+})(4,5);
+9
+var add = function(4,5){
+	return x + y;
+}
+VM1032:1 Uncaught SyntaxError: Unexpected number
+var add = (function(4,5){
+	return x + y;
+})
+VM1046:1 Uncaught SyntaxError: Unexpected number
+var add = function(x,y){
+	return x + y;
+}
+undefined
+add(5,6)
+11
+var obj = {"name":"Ram","sal":45000,"dept":"IT"}
+undefined
+obj
+{name: "Ram", sal: 45000, dept: "IT"}
+obj.dept
+"IT"
+obj.name
+"Ram"
+function Emp(id,name,sal,dept) {
+	this.id = id;
+	this.name = name;
+	this.sal = sal;
+	this.dept = dept;
+}
+undefined
+var obj = new Emp(101,'ram',45000,'IT')
+undefined
+obj
+Emp {id: 101, name: "ram", sal: 45000, dept: "IT"}
+function Emp(id,name,sal,dept) {
+	this.id = 102;
+	this.name = 'Shyam';
+	this.sal = 30000;
+	this.dept = 'HR';
+}
+undefined
+var obj = new Emp(101,'ram',45000,'IT')
+undefined
+obj
+Emp {id: 102, name: "Shyam", sal: 30000, dept: "HR"}
+function Emp(id,name,sal,dept) {
+	id = id;
+	name = name;
+	sal = sal;
+	dept = dept;
+}
+undefined
+function add(x,y){
+	x = 5;
+	y = 6;
+	console.log(x,y);
+}
+undefined
+add(1,2)
+VM1669:4 5 6
+undefined
+function add(x,y){
+	x = x;
+	y = y;
+	console.log(x,y);
+}
+undefined
+function add(){
+	var x1 = x;
+	var y1 = y;
+	console.log(x1,y1);
+}
+undefined
+add()
+VM1773:2 Uncaught ReferenceError: x is not defined
+    at add (<anonymous>:2:11)
+    at <anonymous>:1:1
+add @ VM1773:2
+(anonymous) @ VM1790:1
+function add(x,y){
+	var x1 = x;
+	var y1 = y;
+	console.log(x1,y1);
+}
+undefined
+add(4,5)
+VM1802:4 4 5
+undefined
+var x = "hello";
+undefined
+x[0]
+"h"
+x[0] = 'y'
+"y"
+x
+"hello"
+x[0]
+"h"
+x += "bye"
+"hellobye"
+x
+"hellobye"
+x = "bye"
+"bye"
+x
+"bye"
+x += "bye"
+"byebye"
+x
+"byebye"
+x = [4,6,7,9]
+(4) [4, 6, 7, 9]
+x[0] = 100
+100
+x
+(4) [100, 6, 7, 9]
+x = 12
+12
+x += 1;
+13
+x
+13
