@@ -93,3 +93,59 @@ p {
 #products_list .product h5 {
     text-transform: capitalize;
 }
+
+#cartList li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+#cartList li img {
+    height: 70px;
+    width: 60px;
+}
+
+#cartList li h5 {
+    width: 40%;
+    font-size: 14px;
+}
+
+#cartList li span {
+    width: 20%;
+    display: inline-block;
+}
+
+#cartList li button {
+    width: 20%;
+    display: inline-block;
+}
+
+#section_1 h5 span {
+    cursor: pointer;
+    color: red;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchItem {
+    position: absolute;
+    width: 100%;
+    top: 45px;
+    z-index: 10;
+}
+
+#searchItem li {
+    padding: 10px;
+}
+
+#searchItem li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+#searchItem li:nth-child(even) {
+    background-color: #eee;
+}
