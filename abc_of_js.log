@@ -1,0 +1,33 @@
+var obj = {"name":"Ram"}
+undefined
+var showDetails = function(age,sal){
+	console.log("Hello",this.name,"your age is",age,"and salary is",sal);
+}
+undefined
+showDetails.call(obj,30,30000);
+VM292:2 Hello Ram your age is 30 and salary is 30000
+undefined
+showDetails.apply(obj,30,30000);
+VM519:1 Uncaught TypeError: CreateListFromArrayLike called on non-object
+    at <anonymous>:1:13
+(anonymous) @ VM519:1
+showDetails.apply(obj,[30,30000]);
+VM292:2 Hello Ram your age is 30 and salary is 30000
+undefined
+showDetails.call(obj,[30,30000]);
+VM292:2 Hello Ram your age is (2) [30, 30000] and salary is undefined
+undefined
+showDetails.bind(obj);
+ƒ (age,sal){
+	console.log("Hello",this.name,"your age is",age,"and salary is",sal);
+}
+x1 = showDetails.bind(obj);
+ƒ (age,sal){
+	console.log("Hello",this.name,"your age is",age,"and salary is",sal);
+}
+x1(43,45000)
+VM292:2 Hello Ram your age is 43 and salary is 45000
+undefined
+console.dir(x1)
+VM743:1 ƒ bound showDetails()arguments: (...)caller: (...)length: 2name: "bound showDetails"__proto__: ƒ ()[[TargetFunction]]: ƒ (age,sal)[[BoundThis]]: Objectname: "Ram"__proto__: Object[[BoundArgs]]: Array(0)
+undefined

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        li {
+            border: 1px solid red;
+            width: 33%;
+            margin: 0px 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>DOM Traversing</h1>
+
+    <ul>
+        <li>
+            <img src="../images/hulk5-18463.gif" alt="">
+            <h4>Product Name</h4>
+            <p>Product Price</p>
+            <button>Add to Cart</button>
+        </li>
+        <li>
+            <img src="../images/hulk5-18463.gif" alt="">
+            <h4>Product Name</h4>
+            <p>Product Price</p>
+            <button>Add to Cart</button>
+        </li>
+        <li>
+            <img src="../images/hulk5-18463.gif" alt="">
+            <h4>Product Name</h4>
+            <p>Product Price</p>
+            <button>Add to Cart</button>
+        </li>
+    </ul>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $("button").click(function() {
+            // $(this).siblings().hide(1000);
+            // $(this).siblings("img").hide(1000);
+            // $(this).prev().hide(1000);
+            // $(this).parent().hide(1000);
+            // $(this).parents().hide(1000);
+            // $(this).parentsUntil('body').hide(1000);
+            $(this).parent().next("li").find("img").hide(1000);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>AJAX Using Jquery</h1>
+
+    <button>Load AJAX</button>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $("button").click(function() {
+            // $.get("https://newsapi.org/v2/everything?q=apple&from=2019-11-22&to=2019-11-22&sortBy=popularity&apiKey=695e07af402f4b119f0703e9b19f4683", function(data) {
+            //     console.log(data);
+            // })
+
+            $.ajax({
+                "method": "get",
+                "url": "https://newsapi.org/v2/everything?q=apple&from=2019-11-22&to=2019-11-22&sortBy=popularity&apiKey=695e07af402f4b119f0703e9b19f4683",
+                "success": function(data) {
+                    console.log(data);
+                }
+            })
+        })
+    </script>
+
+</body>
+
+</html>
