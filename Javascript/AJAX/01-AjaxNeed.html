@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>AJAX Need</h1>
+
+    <button onclick="start()">Click Here</button>
+
+    <script>
+        function start() {
+            one();
+            two();
+            three();
+            four();
+            five();
+        }
+
+        function one() {
+            console.log("Function one executed...");
+        }
+
+        function two() {
+            console.log("Function two executed...");
+        }
+
+        function three() {
+            setTimeout(function() {
+                for (var i = 0; i < 1000; i++) {
+                    for (var j = 0; j < 100; j++) {
+                        k = i + j;
+                    }
+                }
+                console.log("Function three executed...");
+            }, 10);
+        }
+
+        function four() {
+            console.log("Function four executed...");
+        }
+
+        function five() {
+            console.log("Function five executed...");
+        }
+    </script>
+</body>
+
+</html>
